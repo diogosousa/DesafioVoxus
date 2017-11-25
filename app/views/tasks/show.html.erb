@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @task.nome %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @task.descricao %>
+</p>
+
+<p>
+  <strong>Anexo:</strong>
+  <%= @task.anexo %>
+</p>
+
+<p>
+  <strong>Prioridade:</strong>
+  <%= @task.prioridade %>
+</p>
+
+<p>
+  <strong>Usuario:</strong>
+  <%= @task.usuario %>
+</p>
+
+<%= link_to 'Editar', edit_task_path(@task) %> |
+<%= link_to 'Voltar', tasks_path %>
